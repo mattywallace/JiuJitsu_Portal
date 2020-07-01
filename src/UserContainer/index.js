@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import CardContainer from '../CardContainer'
 
 class UserContainer extends React.Component {
 	constructor(props) {
@@ -15,9 +16,8 @@ class UserContainer extends React.Component {
 				<h2> User Container</h2>
 				<div> This is an element</div>
 				<p> {this.state.clickerNumber} </p>
-				
-				
 				<button className='tester' onClick={ () => this.setState({clickerNumber: this.state.clickerNumber + 1})}> Click Here </button>
+				<CardContainer />
 			</React.Fragment>
 		)
 	}
